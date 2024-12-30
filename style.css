@@ -1,0 +1,368 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Black background */
+  color: #FFFFFF; /* White text color */
+}
+
+/* Header Section */
+header {
+  background-color: #1D1D1D; /* Slightly darker black for header */
+  padding: 15px 0;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF; /* White for navigation links */
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #FF0000; /* Red on hover */
+}
+
+header .logo h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  color: #FFFFFF; /* White for logo */
+}
+
+/* Home Section */
+.intro {
+  background-color: #121212; /* Black */
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 2px solid #333; /* Divider */
+}
+
+.intro h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #FF0000; /* Red button */
+  padding: 12px 25px;
+  color: #FFFFFF; /* White text */
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #D10000; /* Darker Red on hover */
+}
+
+/* About Section */
+#about {
+  background-color: #1D1D1D; /* Dark gray background */
+  padding: 60px 20px;
+  text-align: center; /* Center the content */
+}
+
+#about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* White for heading */
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #E0E0E0; /* Light gray text */
+  max-width: 750px;
+  margin: 0 auto 20px; /* Center and add space at the bottom */
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center the list items */
+}
+
+#about ul li {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #E0E0E0; /* Light gray text */
+  line-height: 1.6;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #121212; /* Black background */
+  padding: 60px 20px;
+}
+
+#projects .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 36px;
+  color: #FFFFFF; /* White for section heading */
+  margin-bottom: 30px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #1D1D1D; /* Dark gray background for cards */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 260px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  border: 1px solid #333;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  color: #FF0000; /* Red for project titles */
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #E0E0E0; /* Light gray text */
+  margin-bottom: 15px;
+}
+
+.view-project {
+  text-decoration: none;
+  color: #FF0000; /* Red for links */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.view-project:hover {
+  text-decoration: underline;
+  color: #D10000; /* Darker red on hover */
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Services Section */
+#services {
+  background-color: #121212; /* Black background */
+  padding: 60px 20px;
+  text-align: center; /* Center the content */
+}
+
+#services h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #FFFFFF; /* White for heading */
+}
+
+#services ul {
+  list-style: none;
+  padding: 0;
+}
+
+#services ul li {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #E0E0E0; /* Light gray text */
+  line-height: 1.6;
+  text-align: center; /* Center the list items */
+}
+
+/* Service Item Highlight (Optional) */
+#services ul li span {
+  color: #FF0000; /* Highlight in red */
+  font-weight: 600;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #1D1D1D; /* Dark gray background */
+  padding: 60px 20px;
+  text-align: center; /* Center the content */
+}
+
+#contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* White for heading */
+}
+
+.email-link {
+  color: #FF0000; /* Red for email link */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.email-link:hover {
+  color: #D10000; /* Darker red on hover */
+}
+
+/* Footer Section */
+footer {
+  background-color: #1D1D1D; /* Dark gray background */
+  color: #E0E0E0; /* Light gray text */
+  padding: 15px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (Small Screens) */
+@media (max-width: 767px) {
+  /* Header Navigation */
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Home Section */
+  .intro h1 {
+    font-size: 28px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+  }
+
+  /* About Section */
+  #about h2 {
+    font-size: 24px;
+  }
+
+  #about p, #about ul li {
+    font-size: 14px;
+  }
+
+  /* Projects Section */
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Services Section */
+  #services h2 {
+    font-size: 28px;
+  }
+
+  #services ul li {
+    font-size: 14px;
+  }
+
+  /* Contact Section */
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/* Tablet Devices (Medium Screens) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Header Navigation */
+  header nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav ul li {
+    margin: 10px;
+  }
+
+  /* Home Section */
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+
+  /* About Section */
+  #about h2 {
+    font-size: 28px;
+  }
+
+  /* Projects Section */
+  .project-list {
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: 45%;
+  }
+
+  /* Services Section */
+  #services h2 {
+    font-size: 30px;
+  }
+
+  #services ul li {
+    font-size: 16px;
+  }
+
+  /* Contact Section */
+  #contact h2 {
+    font-size: 30px;
+  }
+}
